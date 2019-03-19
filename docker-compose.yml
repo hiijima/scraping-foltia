@@ -1,0 +1,10 @@
+scraiping-foltia:
+  image: scraping-foltia
+  container_name: scraping-foltia-1.0.0
+  hostname: scraping-foltia
+  extra_hosts:
+    - "foltiahosts:foltiaserver"
+  environment:
+    - FROM_MAIL=foltiaserver.com
+    - TO_MAIL=to@example.com
+    - MAIL_SERVER=mailserver@example.com
